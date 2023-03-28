@@ -38,5 +38,10 @@
 		values(seq_petsitter.nextval, #{sitter_nickname},#{accountNum}, #{bank} )
 	
 	</insert>
+	
+	<!-- 펫시터 한건 가져오기 -->
+	<select id="select" resultType="PetSitter" parameterType="int">
+		select * from petsitter where petsitter_idx=#{petsitter_idx}
+	</select>
 
 </mapper>
