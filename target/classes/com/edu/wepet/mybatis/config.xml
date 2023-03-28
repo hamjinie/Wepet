@@ -13,6 +13,8 @@
 	<typeAlias type="com.edu.wepet.domain.PetSitter" alias="PetSitter"/>
 	<typeAlias type="com.edu.wepet.domain.BoardReview" alias="BoardReview"/>
 	<typeAlias type="com.edu.wepet.domain.Sales" alias="Sales"/>
+	<typeAlias type="com.edu.wepet.domain.Holiday" alias="Holiday"/>
+	<typeAlias type="com.edu.wepet.domain.PreReservation" alias="PreReservation"/>
 </typeAliases>
  
   <mappers>
@@ -25,7 +27,8 @@
 	<mapper resource="com/edu/wepet/mybatis/PetsitterMapper.xml" />
 	<mapper resource="com/edu/wepet/mybatis/BoardReviewMapper.xml" />
 	<mapper resource="com/edu/wepet/mybatis/SalesMapper.xml" />
-
+	<mapper resource="com/edu/wepet/mybatis/HolidayMapper.xml" />
+	<mapper resource="com/edu/wepet/mybatis/PreReservationMapper.xml" />
 
   </mappers>
 </configuration>
